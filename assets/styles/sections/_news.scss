@@ -35,7 +35,10 @@
   min-height: 536px;
   background-color: #ffffff;
   border-radius: 20px;
+  transition: box-shadow 0.4s ease;
+  &:hover {
   box-shadow: 40px 15px 136px 0px #00000033;
+  }
   h2 {
     margin-top: 30px;
     margin-left: 30px;
