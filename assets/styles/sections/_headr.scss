@@ -45,6 +45,10 @@
     line-height: 160%;
     letter-spacing: 0%;
     color: #ffffff;
+    cursor: pointer;
+    &:hover {
+        background-color: #f96f5d;
+    }
   }
 
   position: absolute;
