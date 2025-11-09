@@ -1,0 +1,139 @@
+.offer-wrapper {
+  margin-top: 140px;
+}
+
+.offer-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.offer-top-text {
+  h2 {
+    font-weight: 500;
+    font-size: 43px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    color: $primary-color;
+    margin-bottom: 20px;
+  }
+  p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    letter-spacing: 0%;
+    color: #00000091;
+  }
+}
+
+.offer-top-img {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 600px) {
+  .offer-top {
+    flex-direction: column;
+  }
+}
+
+.offer-bottom {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  margin-bottom: 140px;
+}
+
+.offer-card {
+  display: grid;
+  max-width: 369px;
+  padding-left: 3px;
+  h3 {
+    margin-top: 35px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: $primary-color;
+  }
+  h4 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    color: $primary-color;
+    margin-top: 10px;
+  }
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0%;
+    color: #00000091;
+    margin-top: 15px;
+  }
+}
+
+.offer-card-bt {
+  display: flex;
+  margin-top: 30px;
+  gap: 20px;
+  align-items: center;
+}
+
+.ocbt-right {
+  display: flex;
+  width: 114px;
+  height: 57px;
+  border: 2px solid $primary-color;
+  justify-content: space-between;
+  div {
+    text-align: center;
+  }
+}
+
+.ocbt-right-r {
+  border-left: 1px solid $primary-color;
+  width: 58px;
+  height: 57px;
+  div {
+    height: 28px;
+    width: 58px;
+    border-bottom: 1px solid $primary-color;
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+      background-color: #d3cfcf;
+    }
+  }
+}
+
+.ocbt-right-t {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+@media (max-width: 988px) {
+  .offer-bottom {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 696px) {
+    .offer-bottom {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 369px) {
+    .offer-bottom {
+    grid-template-columns: 1fr;
+  }
+  .offer-card {
+    img {
+        max-width: 369px;
+        width: 100%;
+    }
+  }
+}
